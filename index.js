@@ -107,15 +107,18 @@ const zooAnimals = [
   */
 
 function animalNames(data) {
-  let displayNames = [];
+ let displayNames = [];
+ let animalString = "";
 
-  data.forEach(function(item){
+ data.forEach(function(val, index, data){
 
-    displayNames += item;
+  animalString = "name: " +data[index]['animal_name'] +", ";
+  animalString += "scientific: " +data[index]['scientific_name']
+  
+  displayNames.push(animalString);
+ });
 
-  });
-  console.log(displayNames)
-  return displayNames;
+ return displayNames;
 }
 
 /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
