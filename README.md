@@ -27,12 +27,12 @@ Edit this document to include your answers after each question. Make sure to lea
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
 .map creates a new array
-.reduce adds all elements in an array
+.reduce adds all elements in an array into a single value.
 .filter creates a new array any data that passes the created function
 
 2. Explain the difference between a callback and a higher order function.
 
-Higher order function takes a function as an argument and a callback is passed to another function.
+Higher order function takes a function as an argument and a callback is a function passed to another function.
 
 3. Explain what a closure is.
 
@@ -46,7 +46,7 @@ Principle 1: Window/Global Object Binding
 
 Principle 2: Implicit Binding
 
-    When a . calls a function there needs to be an object before the dot.
+    When a . calls a function there needs to be an object ("this") before the dot.
 
 Principle 3: New binding
 
